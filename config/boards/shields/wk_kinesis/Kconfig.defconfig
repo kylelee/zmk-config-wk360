@@ -5,7 +5,7 @@
 if SHIELD_WK_KINESIS_LEFT
 
 config ZMK_KEYBOARD_NAME
-    default "WK 360 Build by Kyle 2026-07-19"
+    default "WK 360 20260719"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
