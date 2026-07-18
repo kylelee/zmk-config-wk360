@@ -4,25 +4,25 @@
 # control, add individual board + shield combinations to
 # the `include` property, e.g:
 #
-# board: [ "nice_nano_v2" ]
+# board: [ "nice_nano//zmk" ]
 # shield: [ "corne_left", "corne_right" ]
 # include:
 #   - board: bdn9_rev2
-#   - board: nice_nano_v2
+#   - board: nice_nano//zmk
 #     shield: reviung41
 #
 ---
 include:
-  - board: nice_nano_v2
+  - board: nice_nano//zmk
     shield: wk_kinesis_left
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_LOCKING=n
     artifact-name: wk_kinesis_left_studio
-  - board: nice_nano_v2
+  - board: nice_nano//zmk
     shield: wk_kinesis_left
     artifact-name: wk_kinesis_left
-  - board: nice_nano_v2
+  - board: nice_nano//zmk
     shield: wk_kinesis_right
     artifact-name: wk_kinesis_right
-  - board: nice_nano_v2
+  - board: nice_nano//zmk
     shield: settings_reset
