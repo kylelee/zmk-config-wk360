@@ -16,13 +16,15 @@ include:
   - board: nice_nano//zmk
     shield: wk_kinesis_left
     snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_LOCKING=n
+    cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_LOCKING=n -DCONFIG_ZMK_SPLIT_WIRED=y -DCONFIG_ZMK_SPLIT_WIRED_UART_MODE_POLLING=y -DCONFIG_ZMK_SPLIT_BLE=n -DCONFIG_ZMK_BLE=n
     artifact-name: wk_kinesis_left_studio
   - board: nice_nano//zmk
     shield: wk_kinesis_left
+    cmake-args: -DCONFIG_ZMK_SPLIT_WIRED=y -DCONFIG_ZMK_SPLIT_WIRED_UART_MODE_POLLING=y -DCONFIG_ZMK_SPLIT_BLE=n -DCONFIG_ZMK_BLE=n
     artifact-name: wk_kinesis_left
   - board: nice_nano//zmk
     shield: wk_kinesis_right
+    cmake-args: -DCONFIG_ZMK_SPLIT_WIRED=y -DCONFIG_ZMK_SPLIT_WIRED_UART_MODE_POLLING=y -DCONFIG_ZMK_SPLIT_BLE=n -DCONFIG_ZMK_BLE=n
     artifact-name: wk_kinesis_right
   - board: nice_nano//zmk
     shield: settings_reset
