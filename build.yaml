@@ -32,14 +32,6 @@ include:
     cmake-args: -DCONFIG_ZMK_SPLIT_WIRED=y -DCONFIG_ZMK_SPLIT_WIRED_UART_MODE_POLLING=y -DCONFIG_ZMK_SPLIT_BLE=n
     artifact-name: test_left_wired_polling
   - board: nice_nano//zmk
-    shield: wk_kinesis_left
-    cmake-args: -DCONFIG_ZMK_SPLIT_WIRED=y -DCONFIG_ZMK_SPLIT_WIRED_UART_MODE_ASYNC=y -DCONFIG_ZMK_SPLIT_BLE=n
-    artifact-name: test_left_wired_async
-  - board: nice_nano//zmk
-    shield: wk_kinesis_left
-    cmake-args: -DCONFIG_ZMK_SPLIT_WIRED=y -DCONFIG_ZMK_SPLIT_WIRED_UART_MODE_INTERRUPT=y -DCONFIG_ZMK_SPLIT_BLE=n -DCONFIG_ZMK_USB_LOGGING=y
-    artifact-name: test_left_wired_interrupt_log
-  - board: nice_nano//zmk
-    shield: wk_kinesis_left
-    cmake-args: -DCONFIG_ZMK_SPLIT_WIRED=n
-    artifact-name: test_left_node_disabled
+    shield: wk_kinesis_right
+    cmake-args: -DCONFIG_ZMK_SPLIT_WIRED=y -DCONFIG_ZMK_SPLIT_WIRED_UART_MODE_POLLING=y -DCONFIG_ZMK_SPLIT_BLE=n
+    artifact-name: test_right_wired_polling
