@@ -48,9 +48,17 @@ zephyr_udc0:&usbd{
 };
 
 &uart0 {
+    compatible = "nordic,nrf-uarte";   /* DMA 模式需要，其他模式无害 */
     status = "okay";
     current-speed = <19200>;
     pinctrl-0 = <&uart0_wired_default>;
     pinctrl-1 = <&uart0_wired_sleep>;
     pinctrl-names = "default", "sleep";
+};
+
+/ {
+    wired_split {
+        compatible = "zmk,wired-split";
+        device = <&uart0>;
+    };
 };
