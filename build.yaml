@@ -26,12 +26,3 @@ include:
     artifact-name: wk_kinesis_right
   - board: nice_nano//zmk
     shield: settings_reset
-    # === 有线分体排障变体（只刷左半测试）===
-  - board: nice_nano//zmk
-    shield: wk_kinesis_left
-    cmake-args: -DCONFIG_ZMK_SPLIT_WIRED=y -DCONFIG_ZMK_SPLIT_WIRED_UART_MODE_POLLING=y -DCONFIG_ZMK_SPLIT_BLE=n
-    artifact-name: test_left_wired_polling
-  - board: nice_nano//zmk
-    shield: wk_kinesis_right
-    cmake-args: -DCONFIG_ZMK_SPLIT_WIRED=y -DCONFIG_ZMK_SPLIT_WIRED_UART_MODE_POLLING=y -DCONFIG_ZMK_SPLIT_BLE=n
-    artifact-name: test_right_wired_polling
